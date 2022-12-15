@@ -1,0 +1,3 @@
+<footer>
+    Sonno Footer
+</footer>
