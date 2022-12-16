@@ -17,6 +17,14 @@ Route::get('/', function () {
     return  view('home');
 })->name('home');
 
+Route::get('/blog', function () {
+    return  view('blog');
+})->name('blog');
+
+Route::get('/products', function () {
+    return  view('products');
+})->name('products');
+
 // una rota per ogni, il name prova.contatti
 
 // Route::get('/contatti', function () {
