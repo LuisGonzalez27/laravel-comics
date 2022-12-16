@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return  view('home');
+    $comics = config('comics');
+    return view('home', compact('comics'));
 })->name('home');
 
 Route::get('/blog', function () {
@@ -24,9 +25,3 @@ Route::get('/blog', function () {
 Route::get('/products', function () {
     return  view('products');
 })->name('products');
-
-// una rota per ogni, il name prova.contatti
-
-// Route::get('/contatti', function () {
-//     return '<h1>Hello World</h1>';
-// });
